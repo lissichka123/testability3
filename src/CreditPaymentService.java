@@ -4,9 +4,8 @@ public class CreditPaymentService {
         double timeMonth = timeYear * 12;
         double x = Math.pow(monthPercent + 1, timeMonth);
         double annuityRate = (monthPercent * x) / (x - 1);
-        double annuityPayment = (creditSum * annuityRate);
-        return (annuityPayment);
+        return ((int) (creditSum * annuityRate));
     }
-    }
+}
 
 
